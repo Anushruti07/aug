@@ -12,8 +12,8 @@ import { ContactComponent } from './components/contact/contact.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ProductsComponent,NoticesComponent,NavbarComponent,ChartsComponent,PieChartComponent,HomeComponent,
-    AboutComponent,ContactComponent
+  imports: [RouterOutlet,ProductsComponent,NoticesComponent,NavbarComponent,ChartsComponent,PieChartComponent,
+    HomeComponent,AboutComponent,ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
