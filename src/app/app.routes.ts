@@ -7,10 +7,13 @@ import { ProductsComponent } from './components/products/products.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { ChartsComponent } from './components/charts/charts.component';
+import { NewNoticeComponent } from './components/new-notice/new-notice.component';
+import { AddPublisherComponent } from './components/publisher/add-publisher/add-publisher.component';
 
 
 
 export const routes: Routes = [
+    {path:'',component:HomeComponent},
     {path:'home',component:HomeComponent},
     {path:'about',component:AboutComponent},
     {path:'contact',component:ContactComponent},
@@ -19,4 +22,8 @@ export const routes: Routes = [
     {path:'notices',component:NoticesComponent},
     {path:'products',component:ProductsComponent},
     {path:'newProducts',component:NewProductsComponent},
+    {path:'newNotice',component:NewNoticeComponent},
+    {path:'addPublisher',component:AddPublisherComponent},
+    {path:'**',component:HomeComponent},
+
 ];

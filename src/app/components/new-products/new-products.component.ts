@@ -12,10 +12,10 @@ export class NewProductsComponent {
   products:any
   constructor(private http:HttpClient){}
   ngOnInit(){
-    this.http.get("https://www.fakestoreapi.com/products")
+    this.http.get("https://fakestoreapi.com/products")
     .subscribe(res=>
     {
-      console.log()
+      console.log(res)
       this.products=res
     }
     )
